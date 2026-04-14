@@ -18,8 +18,16 @@ def remove_book(book):
     else:
         print("Book not found!")
 
+def search_book(book):
+    if book in books:
+        print(book, "is available.")
+    else:
+        print(book, "is not available.")
+
+
 # Demo
 show_books()
 add_book("Prison Break")
-remove_book("Escape from Alcatraz")
+remove_book("Hannibal")
 show_books()
+search_book("Science")
